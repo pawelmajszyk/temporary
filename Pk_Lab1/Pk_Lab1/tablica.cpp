@@ -23,6 +23,18 @@ tablica::tablica(tablica&tab)//Konstruktor kopiujacy
 		
 	}
 }
+tablica::tablica(float* x, float* y, int  dl)
+{
+	this->dl = dl;
+	pkt = new punkt[dl];
+	for (int i = 0; i < dl; ++i)
+	{
+		pkt[i] = punkt(x[i], y[i]);
+
+
+	}
+
+}
 tablica::~tablica()
 {
 	delete pkt;

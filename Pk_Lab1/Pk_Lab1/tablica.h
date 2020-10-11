@@ -10,6 +10,7 @@ class tablica
 public:
 	tablica(int dlug=0);
 	tablica(tablica& pkt);
+	tablica(float* x, float* y, int  dl);
 	~tablica(); //Dekonstrukot 
 	void dodaj(tablica& tab); // Dodanie wektora
 	bool porownaj(tablica& tab);// Porownanie czy tablice sa takie same
